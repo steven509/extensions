@@ -116,7 +116,7 @@ export class MtxSelectComponent
   @Input() clearOnBackspace = true;
   @Input() compareWith: CompareWithFn;
   @Input() dropdownPosition: 'bottom' | 'top' | 'auto' = 'auto';
-  @Input() groupBy: () => void | string;
+  @Input() groupBy: string | Function;
   @Input() groupValue: GroupValueFn;
   @Input() selectableGroup = false;
   @Input() selectableGroupAsModel = true;
